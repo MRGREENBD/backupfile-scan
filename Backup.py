@@ -12,6 +12,10 @@ from requests import get as GET
 
 if os.name == "posix":
 	os.system("clear")
+	try:
+		os.mkdir("./File")
+	except:
+		pass
 else:
 	os.system("cls")
 
